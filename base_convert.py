@@ -1,3 +1,4 @@
+"""
 def convert_to_decimal(numbert_str,base):
         if base < 2 and base > 36:
                 return "error, base invalid"
@@ -44,6 +45,28 @@ def convert_base(numbert_str, from_base, to_base):
        if isinstance(number, str):
               return number
        return convert_from_decimal(number, to_base)
+"""
+
+def convert_base(number_str, from_base, to_base):
+        digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        try:
+                if from_base < 2 and from_base > 36:
+                        return "ERROR"
+                if to_base < 2 and to_base > 36:
+                        return "ERROR"
+
+                number = int(number_str,from_base)
+
+                if number == 0:
+                        return "0"
+                out_put = ""
+                while number > 0:
+                        out_put = digits[number % to_base] + out_put
+                        number //=to_base
+
+                return out_put
+        except Exception:
+                return "error"
 
 
 print(convert_base("1010", 2, 10))        # "10"

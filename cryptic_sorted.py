@@ -8,7 +8,7 @@ def vowels(word):
 
 def cryptic_sorter(s_list):
 
-    return sorted(s_list, key= lambda word : (len(word),word.lower(), word.upper(), vowels(word)))
+    return sorted(s_list, key= lambda word : (len(word),word.lower(), vowels(word)))
 
 
 
