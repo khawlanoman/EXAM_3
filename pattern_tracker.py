@@ -17,5 +17,7 @@ print(pattern_tracker("1a2b3c4d5"))
 print(pattern_tracker("12asd34hkh45kjhj56jhj67kjhjh78kjhjh89kjhkhj110"))
 print(pattern_tracker(""))          
 print(pattern_tracker("7"))         
-print(pattern_tracker("111111"))    
+print(pattern_tracker("111111"))  
+print(pattern_tracker("012345"))    
+
 print(pattern_tracker("98"))        
